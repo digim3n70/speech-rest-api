@@ -1,1 +1,1 @@
-medium_model_en.py
+/home/dwemer/speech-rest-api/medium_model_en.py
