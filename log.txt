@@ -1,0 +1,18 @@
+[Speech REST API] Starting production server with Waitress on port 3000
+Traceback (most recent call last):
+  File "/home/dwemer/speech-rest-api/custom_app.py", line 73, in <module>
+    serve(app, host='0.0.0.0', port=port)
+  File "/home/dwemer/speech-rest-api/python/lib/python3.11/site-packages/waitress/__init__.py", line 13, in serve
+    server = _server(app, **kw)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/dwemer/speech-rest-api/python/lib/python3.11/site-packages/waitress/server.py", line 78, in create_server
+    last_serv = TcpWSGIServer(
+                ^^^^^^^^^^^^^^
+  File "/home/dwemer/speech-rest-api/python/lib/python3.11/site-packages/waitress/server.py", line 243, in __init__
+    self.bind_server_socket()
+  File "/home/dwemer/speech-rest-api/python/lib/python3.11/site-packages/waitress/server.py", line 364, in bind_server_socket
+    self.bind(sockaddr)
+  File "/home/dwemer/speech-rest-api/python/lib/python3.11/site-packages/waitress/wasyncore.py", line 374, in bind
+    return self.socket.bind(addr)
+           ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
